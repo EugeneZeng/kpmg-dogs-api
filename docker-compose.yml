@@ -4,4 +4,4 @@ services:
         build: .
         command: 'node server.js'
         ports: 
-            - '8000:3000'
+            - '3000:3000'
