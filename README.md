@@ -22,7 +22,7 @@ curl http://localhost:3000/images/hound
 ### Fetch all the images with breed and sub breed 
 - http://localhost:3000/images/{nameOfBreed}/{nameOfSubBreed}, for example:
 ```bash
-http://localhost:3000/images/hound/afghan
+curl http://localhost:3000/images/hound/afghan
 ```
 
 ## Testing
