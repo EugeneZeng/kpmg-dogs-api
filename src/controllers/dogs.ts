@@ -14,7 +14,6 @@ export const list = (req: Request, res: Response) => {
         })
 };
 
-
 export const imageRouter = express.Router()
     .get('/:breed', (req: Request, res: Response) =>
         axios.get(`${host}/breed/${req.params.breed}/images`)

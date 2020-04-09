@@ -1,3 +1,4 @@
+import { Request, Response } from "express";
 import express = require("express");
 import { list, imageRouter } from './controllers/dogs'
 
@@ -6,12 +7,10 @@ const app = express();
 app.set("port", process.env.PORT || 3000);
 
 // API Endpoints
-app.get("/", (req, res) => {
-    res.send("hello");
-})
+app
 .get("/list", list)
-.use("/images", imageRouter);
-
+.use("/images", imageRouter)
+.all("*", (req: Request, res: Response) => res.json({code: 404, message: "Path not found."}));
 
 // export our app
 export default app;
