@@ -1,6 +1,13 @@
 # kpmg-dogs-api
 Build for dogs api.
 
+## Before everything
+- Get into the project folder
+- Install packages
+```bash
+yarn
+```
+
 ## How to run the project
 * Download the project from git.
 * Run `cd kpmg-dogs-api` to get into the project folder;
